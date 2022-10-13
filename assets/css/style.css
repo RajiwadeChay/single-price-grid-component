@@ -211,13 +211,6 @@ li {
 /*=================================
   main styling starts here
 =================================*/
-html,
-body,
-.container,
-main {
-  height: 100%;
-}
-
 main {
   background-color: #E6EFF6;
 }
@@ -231,43 +224,129 @@ main {
   border-radius: 10px;
   box-shadow: 2px 2px 50px -15px #CCC;
   background-color: #FFF;
+  overflow: hidden;
 }
 
+/*styling for card start here*/
 .card {
-  padding: 41px 6.4%;
   border-radius: 5px;
 }
 
+/*styling for card top start here*/
+.card-top,
+.subcription,
+.why-us {
+  padding: 42px 6.5%;
+}
+
 h1 {
-  color: #4ABEBD;
-  font-size: 26px;
+  color: #2BB3B1;
+  font-size: 25.4px;
   font-weight: 700;
 }
 
 p {
-  margin-top: 14px;
+  margin-top: 8px;
   color: #9397A2;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 400;
+  line-height: 28px;
 }
 
 .sub-heading {
-  margin-top: 25px;
+  margin-top: 23px;
   color: #BFDF32;
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 700;
 }
 
+/*styling for card top end here*/
+/*styling for card bottom start here*/
+.card-bottom {
+  display: flex;
+}
 
+/*styling for subcription start here*/
+.subcription {
+  background-color: #2BB3B1;
+  color: #FFF;
+  flex-basis: 50%;
+}
 
+h2 {
+  font-size: 19px;
+  font-weight: 700;
+}
 
+.subcription p {
+  margin-top: 22px;
+  color: #FFF;
+}
 
+.subcription p:nth-child(2) {
+  color: #63D6D3;
+  display: flex;
+  align-items: center;
+}
 
+.subcription p:nth-child(3) {
+  margin-top: 8px;
+  color: #FFF;
+  font-size: 16px;
+}
 
+.price {
+  margin-right: 6%;
+  color: #FFF;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.sign-up {
+  margin-top: 28px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 30px -15px #000;
+  background-color: #BFDF32;
+  text-align: center;
+}
+
+.sign-up a {
+  padding: 17px;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/*styling for subcription end here*/
+/*styling for why us start here*/
+.why-us {
+  background-color: #4ABEBD;
+  color: #FFF;
+  flex-basis: 50%;
+}
+
+.why-us ul {
+  margin-top: 20px;
+  display: flex;
+  color: #A9F1EE;
+  flex-direction: column;
+}
+
+.why-us li {
+  font-size: 15px;
+  line-height: 21px;
+}
+
+/*styling for card bottom end here*/
+/*styling for card end here*/
 /*=================================
   main styling ends here
 =================================*/
 
 /*media query starts*/
 /*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {}
+@media only screen and (max-width: 768px) {
+  .card-bottom {
+    flex-direction: column;
+  }
+}
